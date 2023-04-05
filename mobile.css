@@ -1,0 +1,199 @@
+/*Variables*/
+:root {
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(178, 100%, 50%);
+  --soft_blue: hsl(215, 51%, 70%);
+  --darkest_blue: hsl(217, 54%, 11%);
+  --darker_blue: hsl(216, 50%, 16%);
+  --dark_blue: hsl(215, 32%, 27%);
+  --font_family: "Outfit";
+  --font_light: 300;
+  --font_regular: 400;
+  --font_semibold: 600;
+}
+
+/*Flex Body*/
+body {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  background-color: var(--darkest_blue);
+}
+
+.container {
+  position: relative;
+  width: 327px;
+  height: 545px;
+
+  background: #14253d;
+  box-shadow: 0px 5px 30px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.image-container {
+  position: relative;
+  top: 24px;
+  left: 24px;
+  width: 279px;
+  height: 279px;
+}
+
+.look-effect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  opacity: 0%;
+  width: 279px;
+  height: 279px;
+  background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+.look-effect:hover,
+.look-effect:active {
+  opacity: 100%;
+}
+
+.look-icon {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 139px;
+  top: 140px;
+}
+.image {
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  background-size: contain !important;
+
+  background: url(./images/image-equilibrium.jpg);
+}
+.heading {
+  position: absolute;
+  width: 181px;
+  height: 28px;
+  left: 24px;
+  top: 326px;
+
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+.heading:hover,
+.heading:active {
+  color: var(--cyan);
+}
+.discription {
+  position: absolute;
+  width: 251px;
+  height: 46px;
+  left: 24px;
+  top: 370px;
+
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #8bacda;
+}
+.eth-icon {
+  position: absolute;
+  width: 11px;
+  height: 18px;
+  left: 24px;
+  top: 436px;
+}
+.price {
+  position: absolute;
+  width: 72px;
+  height: 20px;
+  left: 41px;
+  top: 434px;
+
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+
+  color: #00fff8;
+}
+.clock-icon {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 209px;
+  top: 436px;
+}
+.time-remaining {
+  position: absolute;
+  width: 70px;
+  height: 20px;
+  left: 232px;
+  top: 434px;
+
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+
+  color: #8bacd9;
+}
+.line-segement {
+  position: absolute;
+  width: 278px;
+  height: 0px;
+  left: 24px;
+  top: 471px;
+
+  border: 1px solid #2f415b;
+}
+.avatar-icon {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  left: 24px;
+  top: 487px;
+
+  background: url(image-avatar.png);
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+}
+.created-by {
+  position: absolute;
+  width: 171px;
+  height: 20px;
+  left: 72px;
+  top: 493px;
+
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+
+  color: #8bacda;
+}
+.creator {
+  color: #ffffff;
+}
+.creator:hover,
+.creator:active {
+  color: var(--cyan);
+}
